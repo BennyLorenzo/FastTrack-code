@@ -1,0 +1,15 @@
+body {
+    font-family: sans-serif;
+}
+
+.blue {
+    color: blue;
+}
+
+.links a {
+    color: blue;
+}
+
+.greenLink {
+    color: green;
+}
