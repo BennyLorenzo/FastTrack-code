@@ -1,0 +1,64 @@
+nav, .logo, .welcomeImage {
+    text-align: center;
+}
+
+.welcomeImage > img {
+    width: 100%;
+}
+
+.logoImage {
+    width: 200px;
+    padding: 30px;
+}
+
+ul {
+    padding: 0;
+}
+
+ul > li {
+    display: inline-block;
+    margin: 0 20px;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+a:hover {
+    text-decoration: underline;
+    text-underline-offset: 3px;
+}
+
+nav {
+    background-color: darkgreen;
+    padding: 2px;
+}
+
+main {
+    background-color: lightgray;
+}
+
+h1 {
+    background-color: darkgreen;
+    color: white;
+    padding: 5px 15px;
+}
+
+p {
+    line-height: 20px;
+    text-align: justify;
+}
+
+.about {
+    margin-bottom: 50px;
+}
+
+main > div {
+    padding: 20px;
+}
+
+.contacts {
+    background-color: lightgreen;
+}
+

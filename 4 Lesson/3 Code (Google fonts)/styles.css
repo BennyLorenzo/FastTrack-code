@@ -1,0 +1,16 @@
+.sedan {
+    font-size: large;
+    font-family: "Sedan SC", serif;
+}
+
+.briem {
+    font-family: "Briem Hand", cursive;
+}
+
+.poetsen {
+    font-family: "Poetsen One", sans-serif;
+}
+
+div div {
+    text-decoration: underline;
+}

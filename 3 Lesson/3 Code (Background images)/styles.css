@@ -1,0 +1,43 @@
+body {
+    font-family: sans-serif;
+    color: white;
+}
+
+h2, p {
+    margin: 0px;
+}
+
+h2 {
+    margin-bottom: 10px;
+}
+
+.backgroundImage {
+    margin: 30px 15px 30px 15px;
+    padding: 20px;
+    width: 500px;
+    border-radius: 10px;
+    background-size: cover;
+}
+
+img {
+    opacity: 0.5;
+}
+
+.linda {
+    background-image: linear-gradient(
+    to bottom,
+    rgba(152, 152, 130, 0.5),
+    rgba(110, 110, 124, 0.5)
+    ), url("images/palms.jpg");
+    margin-left: 25px;
+}
+
+.irma {
+    background-image: linear-gradient(
+    to bottom,
+    rgba(152, 152, 130, 0.5),
+    rgba(110, 110, 124, 0.5)
+    ), url("images/grain.jpg");
+    padding: 30px;
+    padding-bottom: 50px;
+}

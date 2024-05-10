@@ -1,0 +1,19 @@
+p {
+    border: green 5px dotted;
+    width: 20%;
+    text-align: center;
+}
+
+div {
+    border: rgb(255, 192, 203) 10px none;
+    border-radius: 30% 10%;
+    height: 200px;
+    width: 20%;
+    background-color: pink;
+}
+
+img {
+    height: 200px;
+    border: #000000 10px solid;
+    border-radius: 30%;
+}

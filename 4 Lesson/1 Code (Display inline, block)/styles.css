@@ -1,0 +1,14 @@
+.boxed {
+    height: 100px;
+    width: 100px;
+    background-color: yellow;
+    margin: 5px;
+    border: black 3px solid;
+    padding: 2px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.inlined {
+    display: inline-block;
+}
