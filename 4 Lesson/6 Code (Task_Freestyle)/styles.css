@@ -1,0 +1,71 @@
+body {
+    font-family: sans-serif
+}
+
+.playButton {
+    background-color: rgb(180, 32, 32);
+    color: yellow;
+    display: inline-block;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    height: 40px;
+    line-height: 40px;
+    padding: 10px;
+    text-transform: uppercase;
+    border: 3px yellow solid;
+    border-radius: 5px;
+}
+
+.playButton:hover {
+    background-color: yellow;
+    color: #b42020;
+    border: 3px rgb(180, 32, 32) solid;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    line-height: 100px;
+    display: inline-block;
+}
+
+li {
+    display: inline-block;
+    margin: 0 20px;
+    
+}
+
+.logo {
+    width: 100px;
+    height: 100px;
+    display: inline-block;
+    background-image: url(images/DragonLand_logo.png);
+    background-size: cover;
+}
+
+.logo:hover {
+    background-image: url(images/dragonland_logo_red.png);
+}
+
+nav {
+    float: right;
+}
+
+header {
+    background-color: gray;
+    padding: 0 200px;
+    height: 100px;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+    text-underline-offset: 5px;
+    color: #b42020;
+}
+
