@@ -15,9 +15,13 @@ ul {
     padding: 0;
 }
 
-ul > li {
+nav a {
     display: inline-block;
-    margin: 0 20px;
+    padding: 0 20px;
+}
+
+li {
+    list-style-type: none;
 }
 
 a {

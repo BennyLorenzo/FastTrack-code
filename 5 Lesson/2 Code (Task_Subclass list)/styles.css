@@ -1,0 +1,19 @@
+ul {
+    list-style: none;
+    width: 200px;
+    margin: 10px;
+    padding: 20px;
+}
+
+li {
+    padding: 4px;
+}
+
+li:not(:nth-child(odd)) {
+    background-color: lightgray;
+}
+
+li:first-child, li:last-child {
+    background-color: black;
+    color: white;
+}
