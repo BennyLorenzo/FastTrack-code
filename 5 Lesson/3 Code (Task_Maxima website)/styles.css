@@ -1,18 +1,17 @@
+/* General */
+
 body {
     background-color: rgb(222, 206, 206);
     font-family: sans-serif;
-    margin: 30px 150px;
+    margin: auto auto;
+    text-align: center;
 }
 
-img {
-    width: 300px;
-    max-width: 100%;
+a {
+    color: black;
 }
 
-header img {
-    width: 300px;
-    max-width: 100%;
-}
+/* Lists */
 
 ul {
     margin: 0;
@@ -25,13 +24,29 @@ header li {
     padding: 10px 20px;
 }
 
-a {
-    color: black;
+
+section ul {
+    text-align: left;
+    margin: 0px 50px;
 }
 
-h1 {
-    text-align: center;
+/* Images */
+
+img {
+    width: 300px;
+    max-width: 100%;
 }
+
+.aboutUs img {
+    width: 100%;
+}
+
+.contact img {
+    width: 80%;
+    margin: 30px 0;
+}
+
+/* Containers */
 
 section, header {
     margin: 20px;
@@ -39,17 +54,13 @@ section, header {
     box-shadow: 0 0 5px black;
     background-color: whitesmoke;
     padding: 40px 20px;
-    text-align: center;
 }
 
-.aboutUs img {
-    width: 100%;
-}
+/* Specific */
 
 .aboutUs p {
     text-align: justify;
 }
-
 
 .product, p span {
     font-weight: bold;
@@ -59,21 +70,15 @@ section, header {
     padding: 20px 0;
 }
 
-section ul {
-    text-align: left;
-    margin: 0px 50px;
-}
-
-.contact img {
-    width: 80%;
-    margin: 30px 0;
+div p {
+    margin: 5px 0;
 }
 
 footer {
-    text-align: center;
     color: rgb(79, 79, 79);
+    margin: 50px;
 }
 
-div p {
-    margin: 5px 0;
+.products h2 {
+    margin-top: 50px;
 }
