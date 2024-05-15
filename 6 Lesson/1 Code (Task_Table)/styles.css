@@ -1,0 +1,37 @@
+body {
+    font-family: sans-serif;
+}
+
+table {
+    width: 98vw;
+    text-align: center;
+    border: solid 3px purple;
+    margin: 10px;
+}
+
+th, td {
+    padding: 10px;
+}
+
+th {
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 1.5em;
+    padding: 20px;
+}
+
+th:first-child, td:first-child {
+    font-weight: bold;
+}
+
+th:first-child, th:last-child {
+    width: 30%;
+}
+
+th:nth-child(3) {
+    width: 15%;
+}
+
+tfoot th {
+    text-align: right;
+}
+

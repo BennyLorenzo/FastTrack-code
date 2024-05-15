@@ -1,0 +1,71 @@
+body {
+    
+}
+
+section {
+    border-bottom: gray 1px solid;
+    margin: 10px;
+    padding: 5px 0;
+}
+
+section div {
+    position: static;
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    background-color: gray;
+    text-align: center;
+    font-size: 1.5em;
+    line-height: 100px;
+}
+
+.relativePosition {
+    background-color: red;
+    position: relative;
+}
+
+.fixedPosition {
+    background-color: blue;
+    position: fixed;
+}
+
+.big {
+    font-size: 3em;
+    width: 200px;
+    height: 200px;
+    line-height: 200px;
+}
+
+.absolutePosition {
+    position: absolute;
+    font-weight: bold;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    background-color: green;
+    font-size: 0.7rem;
+}
+
+.top-0 {
+    top:0;
+}
+
+.top-10 {
+    top:10px;
+}
+
+.right-0 {
+    right: 0;
+}
+
+.left-10 {
+    left: 10px;
+}
+
+.bottom-10 {
+    bottom: 10px;
+}
+
+.left-0 {
+    left: 0;
+}

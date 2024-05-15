@@ -1,0 +1,73 @@
+section {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+ul {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    align-items: flex-start;
+    padding: 3px;
+    border: 1px gray solid;
+    margin: 2px;
+    font-size: 2em;
+    width: calc(33% - 8px);
+}
+
+li {
+    line-height: 4em;
+    width: 4em;
+    color: white;
+    background-color: black;
+    text-align: center;
+    margin: 2px;
+}
+
+.alignStart {
+    align-items: flex-start;
+}
+
+.alignStart li {
+    background-color: lightcoral;
+}
+
+.alignEnd {
+    align-items: flex-end;
+}
+
+.alignEnd li {
+    background-color: yellow;
+}
+
+.alignCenter {
+    align-items: center;
+}
+
+.alignCenter li {
+    background-color: lightseagreen;
+}
+
+.alignBaseline {
+    align-items: baseline;
+}
+
+.alignBaseline li {
+    background-color: lightgreen;
+}
+
+.alignBaseline li:first-child, .alignBaseline li:last-child {
+    font-size: 0.5em;
+}
+
+.alignBaseline li:nth-child(3) {
+    font-size: 2.5em;
+}
+
+.alignStretch {
+    align-items: stretch;
+}
+
+.alignStretch li {
+    background-color: violet;
+}

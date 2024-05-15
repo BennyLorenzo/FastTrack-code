@@ -1,0 +1,72 @@
+body {
+    background-color: #384c4c;
+}
+
+form {
+    width: 350px;
+    background-color: #384c4c;
+    margin: 20px auto;
+    text-align: center;
+    color: white;
+    padding: 10px;
+}
+
+input, textarea {
+    margin-bottom: 10px;
+}
+
+label {
+    display: block;
+    width: 100%;
+}
+
+form span {
+    background-color: rgb(255, 133, 153);
+}
+
+label:nth-of-type(5) span {
+    background-color: transparent;
+    font-size: 0.8em;
+}
+
+label:last-of-type {
+    display: inline;
+}
+
+button {
+    background-color: green;
+    color: white;
+    border: 1px solid black;
+    box-shadow: 1px 1px 1px black;
+    margin: 10px 0;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: darkgreen;
+}
+
+input[type=text] {
+    background-color: lightgray;
+}
+
+input[type=text]:focus-visible {
+    outline: none;
+}
+
+input:in-range, input:valid, textarea:valid {
+    border-color: green;
+}
+
+input:out-of-range, input:invalid {
+    border-color: red;
+}
+
+input[type=checkbox]:checked + label:last-of-type {
+    color: darkblue;
+}
+
+input:required {
+    border-left-color: rgb(255, 133, 153);
+}
+

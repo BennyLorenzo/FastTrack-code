@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <section>
+        <h2>Position static:</h2>
+        <div>Static</div>
+        <div>Static</div>
+        <div>Static</div>
+        <div>Static</div>
+    </section>
+    <section>
+        <h2>Position relative:</h2>
+        <div>Static</div>
+        <div class="relativePosition top-10 left-10">Relative</div>
+        <div>Static</div>
+        <div>Static</div>
+    </section>
+    <section>
+        <h2>Position fixed:</h2>
+        <div>Static</div>
+        <div>Static</div>
+        <div>Static</div>
+        <div class="fixedPosition top-0 right-0">Fixed</div>
+    </section>
+    <section>
+        <h2>Position absolute:</h2>
+        <div class="relativePosition big">Relative
+            <div class="absolutePosition top-10 left-10">Absolute</div>
+            <div class="absolutePosition right-0">Absolute</div>
+            <div class="absolutePosition right-0 bottom-10">Absolute</div>
+        </div>
+    </section>
+    
+</body>
+</html>

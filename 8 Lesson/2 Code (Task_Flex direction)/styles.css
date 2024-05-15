@@ -1,0 +1,54 @@
+body {
+    background-color: black;
+}
+
+section div {
+    width: 30px;
+    height: 30px;
+    color: white;
+    text-align: center;
+    margin: 3px;
+    line-height: 30px;
+    font-size: 1em;
+    font-weight: bold;
+}
+
+/* Flex displays */
+
+.reverseRowFlex {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.columnFlex {
+    display: flex;
+    flex-direction: column; 
+}
+
+.columnReverseFlex {
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+.rowFlex {
+    display: flex;
+}
+
+/* Colors */
+
+.red div {
+    background-color: lightcoral;
+}
+
+.yellow div {
+    background-color: yellow;
+}
+
+.blue div {
+    background-color: lightseagreen;
+}
+
+.green div {
+    background-color: lightgreen;
+}
+

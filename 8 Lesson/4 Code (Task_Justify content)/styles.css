@@ -1,0 +1,70 @@
+body{
+    background-color: black;
+}
+
+section {
+    margin: 10px;
+    display: flex;
+}
+
+section div {
+    width: 50px;
+    height: 50px;
+    margin: 2px;
+    color: white;
+    font-size: 2em;
+    text-align: center;
+    line-height: 50px;
+}
+
+/* Justify rules */
+
+.flexStart {
+    justify-content: flex-start;
+}
+
+.flexEnd {
+    justify-content: flex-end;
+}
+
+.flexCenter {
+    justify-content: center;
+}
+
+.flexBetween {
+    justify-content: space-between;
+}
+
+.flexSpaceAround{
+    justify-content: space-around;
+}
+
+.flexSpaceEvenly {
+    justify-content: space-evenly;
+}
+
+/* Colors */
+
+.flexStart div {
+    background-color: lightcoral;
+}
+
+.flexEnd div {
+    background-color: yellow;
+}
+
+.flexCenter div {
+    background-color: lightseagreen;
+}
+
+.flexBetween div {
+    background-color: lightgreen;
+}
+
+.flexSpaceAround div {
+    background-color: violet;
+}
+
+.flexSpaceEvenly div {
+    background-color: rgb(238, 180, 130);
+}

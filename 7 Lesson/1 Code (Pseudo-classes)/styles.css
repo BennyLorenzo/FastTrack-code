@@ -1,0 +1,52 @@
+body {
+    font-family: sans-serif;
+}
+
+p::first-line {
+    background-color: green;
+    color: white;
+    font-weight: bold;
+    font-style: italic;
+}
+
+p::first-letter {
+    color: yellow;
+    font-size: 3em;
+}
+
+.fancyButton {
+    background-color: red;
+    color: white;
+    text-decoration: none;
+    border-radius: 10px;
+    padding: 5px;
+}
+
+.fancyButton:hover {
+    background-color: rgb(250, 160, 160);
+    color: black;
+}
+
+.activeTest:active {
+    color: yellow;
+    font-size: 2em;
+}
+
+form {
+    margin: 20px 0;
+}
+
+input:hover {
+    background-color: lightgreen;
+}
+
+input:focus {
+    background-color: lightgreen;
+}
+
+.visitedTest:visited {
+    font-weight: bold;
+    color: green;
+    background-color: yellow;
+    border: 3px black solid;
+}

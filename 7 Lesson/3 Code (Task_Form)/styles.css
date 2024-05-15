@@ -1,0 +1,57 @@
+html {
+    background-image: url(images/road.jpg);
+    background-size: cover;
+}
+
+form {
+    color: rgb(43, 36, 36);
+    width: 500px;
+    margin: 0 auto;
+    background-color: rgb(238, 223, 223);
+    padding: 3em;
+    margin: 3em auto;
+}
+
+form label {
+    font-weight: bold;
+}
+
+form h1 {
+    margin: 10px 0;
+    text-align: center;
+}
+
+input, label, textarea {
+    width: 100%;
+    margin: 10px 0;
+}
+
+input, textarea {
+    border: none;
+    background-color: transparent;
+    border-bottom: 1px solid gray;
+}
+
+input:focus-visible, textarea:focus-visible {
+    border-bottom: 2px solid gray;
+    outline: none;
+}
+
+button {
+    width: 25%;
+    background-color: rgb(43, 36, 36);
+    color: rgb(238, 223, 223);
+    border: none;
+    box-shadow: 1px 1px 3px black;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: rgb(77, 73, 73);
+}
+
+input[type=text]:in-range {
+    background-color: red;
+}
+
+

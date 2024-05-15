@@ -1,0 +1,35 @@
+section {
+    display: flex;
+    width: 800px;
+    margin: 10px auto;
+    border-bottom: solid 1px gray;
+    color: wheat;
+    font-size: 2em;
+    font-weight: bold;
+}
+
+section div {
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+    text-align: center;
+    line-height: 100px;
+    background-color: lightcoral;
+}
+
+.wrap {
+    flex-wrap: wrap;
+}
+
+.wrap div {
+    background-color: yellow;
+}
+
+.reverseWrap {
+    flex-wrap: wrap-reverse;
+}
+
+.reverseWrap div {
+    background-color: lightseagreen;
+}
+
