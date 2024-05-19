@@ -1,0 +1,49 @@
+main {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: white;
+}
+
+div {
+    border: 1px lightgray solid;
+    border-radius: 5px;
+    margin: 10px;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+}
+
+h3 {
+    padding: 0;
+    margin: 0;
+    margin-top: 10px;
+}
+
+img {
+    width: 100%;
+    align-self: center;
+}
+
+div:first-child {
+    flex: 2;
+}
+
+div:not(:first-child) {
+    flex: 1;
+}
+
+button {
+    font-family: sans-serif;
+    color: white;
+    background-color: gray;
+    border: none;
+    border-radius: 1px;
+    height: 40px;
+    font-size: 0.9em;
+}
+
+button:hover {
+    cursor: pointer;
+    background-color: lightgray;
+}

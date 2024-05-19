@@ -6,8 +6,8 @@ body {
 .playButton {
     background-color: rgb(180, 32, 32);
     color: yellow;
-    display: inline-block;
     text-align: center;
+    width: 100px;
     margin: 0;
     height: 40px;
     line-height: 40px;
@@ -28,13 +28,15 @@ ul {
     margin: 0;
     padding: 0;
     line-height: 100px;
-    display: inline-block;
+}
+
+nav {
+    margin-left: auto;
 }
 
 li {
-    display: inline-block;
+    display: inline-flex;
     margin: 0 20px;
-    
 }
 
 .logo {
@@ -49,23 +51,18 @@ li {
     background-image: url(images/dragonland_logo_red.png);
 }
 
-nav {
-    float: right;
-}
-
 header {
     background-color: gray;
     height: 100px;
     box-shadow: 0px 0px 3px black;
-    text-align: left;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    align-items: center;
 }
 
 header {
-    padding: 0 200px;
-}
-
-section:not(:first-child) {
-    margin: 50px 200px;
+    padding: 0 20%;
 }
 
 a {
@@ -79,13 +76,7 @@ a:hover {
     color: #b42020;
 }
 
-.action h1 {
-    margin: 0;
-    padding: 75px 0 50px 0;
-}
-
 .action {
-    height: 300px;
     background-image: linear-gradient(
     to bottom,
     rgba(152, 152, 130, 0.3),
@@ -94,6 +85,10 @@ a:hover {
     background-size: cover;
     text-align: center;
     color: white;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-evenly;
 }
 
 .races, .classes {
