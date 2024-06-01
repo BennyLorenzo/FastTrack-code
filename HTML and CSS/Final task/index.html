@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="content">
+        <header>
+            <div class="logo"><a href="#">Task manager</a></div>
+                <div class="navbar">
+                    <search>
+                        <form action="">
+                            <img src="images/search.png" alt="search">
+                            <input type="search" id="search" name="search" placeholder="Search...">
+                        </form>
+                    </search>
+                    <div class="navButtons">
+                        <button class="active">Inbox</button>
+                        <button>Calendar</button>
+                    </div>
+                    <div class="icon edit"><img src="images/edit.png" alt="edit"></div>
+                </div>
+        </header>
+        <main>
+            <section class="user">
+                <div class="borderContainer profile">
+                    <div class="profile">
+                        <div class="picture mainPicture"></div>
+                        <div class="name">Natalie Smith</div>
+                        <div class="email">natalie.smith@gmail.com</div>
+                    </div>
+                    <div class="userButtons">
+                        <div class="icon">
+                            <img src="images/settings.png" alt="settings">
+                        </div>
+                        <div class="icon">
+                            <span class="notifications">2</span>
+                            <img id="email" src="images/email.png" alt="email">
+                        </div class="icon">
+                        <div class="icon">
+                            <span class="notifications">6</span>
+                            <img src="images/bell.png" alt="notifications">
+                        </div>
+                    </div>
+                    <div class="progressBar">
+                        <div class="progress">12/34</div>
+                        <div class="bar">
+                            <div class="fill"></div>
+                        </div>
+                    </div>
+                    <div class="progressCounters">
+                        <div>
+                            <div class="counter">12</div>
+                            <div class="taskType"><span>Completed</span> tasks</div>
+                        </div>
+                        <div>
+                            <div class="counter">22</div>
+                            <div class="taskType"><span>To do</span> tasks</div>
+                        </div>
+                        <div>
+                            <div class="counter">243</div>
+                            <div class="taskType"><span>All</span> completed</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="borderContainer">
+                    <h4>Projects</h4>
+                    <ul>
+                        <li><div></div>Marketing</li>
+                        <li><div></div>Design</li>
+                        <li><div></div>Development</li>
+                        <li><div></div>Management</li>
+                    </ul>
+                </div>
+                <div class="borderContainer team">
+                    <h4>Team</h4>
+                    <div class="teamMembers">
+                        <div class="picture"></div>
+                        <div class="picture"></div>
+                        <div class="picture"></div>
+                        <div class="picture"></div>
+                        <div class="picture"></div>
+                    </div>   
+                </div>
+            </section>
+            <section class="list">
+                <div class="label">
+                    <div>Marketing</div>
+                    <img src="images/drop-down.png" alt="label">
+                </div>
+                <div class="taskList">
+                    <div class="taskCard checked">
+                        <div class="wrapper">
+                            <div class="icon">
+                                <img src="images/check-mark.png" alt="check-mark">
+                            </div>
+                            <div class="cardLabel">
+                                <div>Write an article about design</div>
+                                <div>22 Feb, 2019</div>
+                            </div>
+                        </div>
+                        <div class="picture"></div>
+                    </div>
+                    <div class="taskCard">
+                        <div class="wrapper">
+                            <div class="icon">
+                                <img src="images/check-mark.png" alt="check-mark">
+                            </div>
+                            <div class="cardLabel">
+                                <div>Disrupt next level aesthetic raw</div>
+                                <div>22 Feb, 2019</div>
+                            </div>
+                        </div>
+                        <div class="picture"></div>
+                    </div>
+                    <div class="taskCard checked">
+                        <div class="wrapper">
+                            <div class="icon">
+                                <img src="images/check-mark.png" alt="check-mark">
+                            </div>
+                            <div class="cardLabel">
+                                <div>Chicharrones craft beer tattooed</div>
+                                <div>22 Feb, 2019</div>
+                            </div>
+                        </div>
+                        <div class="picture"></div>
+                    </div>
+                    <div class="taskCard">
+                        <div class="wrapper">
+                            <div class="icon">
+                                <img src="images/check-mark.png" alt="check-mark">
+                            </div>
+                            <div class="cardLabel">
+                                <div>Vaporwave readymade shabby</div>
+                                <div>22 Feb, 2019</div>
+                            </div>
+                        </div>
+                        <div class="picture"></div>
+                    </div>
+                    <div class="taskCard">
+                        <div class="wrapper">
+                            <div class="icon">
+                                <img src="images/check-mark.png" alt="check-mark">
+                            </div>
+                            <div class="cardLabel">
+                                <div>Four dollar toast taxidermy</div>
+                                <div>22 Feb, 2019</div>
+                            </div>
+                        </div>
+                        <div class="picture"></div>
+                    </div>
+                    <div class="taskCard">
+                        <div class="wrapper">
+                            <div class="icon">
+                                <img src="images/check-mark.png" alt="check-mark">
+                            </div>
+                            <div class="cardLabel">
+                                <div>Slow-carb disrupt kogi tate bag</div>
+                                <div>22 Feb, 2019</div>
+                            </div>
+                        </div>
+                        <div class="picture"></div>
+                    </div>
+                    <div class="taskCard">
+                        <div class="wrapper">
+                            <div class="icon">
+                                <img src="images/check-mark.png" alt="check-mark">
+                            </div>
+                            <div class="cardLabel">
+                                <div>Pour-over subway tile twee</div>
+                                <div>22 Feb, 2019</div>
+                            </div>
+                        </div>
+                        <div class="picture"></div>
+                    </div>
+                    <div class="taskCard">
+                        <div class="wrapper">
+                            <div class="icon">
+                                <img src="images/check-mark.png" alt="check-mark">
+                            </div>
+                            <div class="cardLabel">
+                                <div>Create AdWords campaign</div>
+                                <div>22 Feb, 2019</div>
+                            </div>
+                        </div>
+                        <div class="picture"></div>
+                    </div>
+                    <div class="taskCard">
+                        <div class="wrapper">
+                            <div class="icon">
+                                <img src="images/check-mark.png" alt="check-mark">
+                            </div>
+                            <div class="cardLabel">
+                                <div>Create AdWords campaign</div>
+                                <div>22 Feb, 2019</div>
+                            </div>
+                        </div>
+                        <div class="picture"></div>
+                    </div>
+                    <div class="taskCard">
+                        <div class="wrapper">
+                            <div class="icon">
+                                <img src="images/check-mark.png" alt="check-mark">
+                            </div>
+                            <div class="cardLabel">
+                                <div>Create AdWords campaign</div>
+                                <div>22 Feb, 2019</div>
+                            </div>
+                        </div>
+                        <div class="picture"></div>
+                    </div>
+                    <div class="taskCard">
+                        <div class="wrapper">
+                            <div class="icon">
+                                <img src="images/check-mark.png" alt="check-mark">
+                            </div>
+                            <div class="cardLabel">
+                                <div>Create AdWords campaign</div>
+                                <div>22 Feb, 2019</div>
+                            </div>
+                        </div>
+                        <div class="picture"></div>
+                    </div>
+                </div>
+                <div class="borderContainer">
+                    <button>Add task</button>
+                </div>
+            </section>
+            <section class="task">
+                <div class="controls">
+                    <div class="taskUser">
+                        <div class="picture"></div>
+                        <div class="name">Natalie Smith</div>
+                    </div>
+                    <div class="taskButtons">
+                        <div class="icon"><img src="images/delete.png" alt="delete"></div>
+                        <div class="icon"><img src="images/user.png" alt="user"></div>
+                        <div class="icon"><img src="images/tag.png" alt="tag"></div>
+                        <div class="icon"><img src="images/checkbox.png" alt="check"></div>
+                        <div class="icon"><img src="images/clip.png" alt="attachments"></div>
+                    </div>
+                </div>
+                <div class="taskView">
+                    <div class="wrapper">
+                        <div class="icon">
+                            <img src="images/check-mark.png" alt="completed">
+                        </div>
+                    </div>
+                    <div class="taskInformation">
+                        <div class="taskName">Write an article about design</div>
+                        <div class="dateTime">
+                            <img src="images/clock.png" alt="clock">
+                            <div>12 Mar, 2019</div>
+                        </div>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore qui cupiditate minus vel? Veritatis, quaerat iure. Reprehenderit repellat deleniti quod mollitia libero magni cumque distinctio eos, repellendus possimus! Iste odio, voluptates omnis similique corporis in non tenetur inventore excepturi nostrum! Deleniti voluptatum nostrum quasi alias saepe voluptatem aliquam nam! Autem minus sequi ratione quo dolore ipsa quae quidem, est quos nam iure eligendi accusantium id recusandae quaerat esse enim harum rem aspernatur aliquam quam. Quos, incidunt. Libero consectetur odit qui quae id eveniet quaerat sunt accusantium. Hic possimus totam maiores fugit iusto, eaque unde reiciendis in quasi ab dolores ullam quae debitis dolore amet atque accusamus quaerat. Sunt tempore officiis tenetur consequatur dignissimos, inventore esse minima natus quis pariatur fugit aut eius ad molestiae accusamus architecto incidunt repellendus possimus numquam obcaecati. Qui, dolores illo cumque doloribus dolorum voluptatem doloremque corrupti, magnam consectetur tempore ipsum? Vero laboriosam non temporibus voluptatum modi?</p>
+                        <ul>
+                            <li><span>Okla Nowak</span> assigned to Natalie Smith. 25 Nov, 2019</li>
+                            <li><span>Okla Nowak</span> added to Marketing. 18 Feb, 2019</li>
+                            <li><span>Okla Nowak</span> created task. 18 Feb, 2019</li>
+                        </ul>
+                        <div class="taskCompletion">
+                            <div class="icon"><img src="images/check-mark.png" alt="completed"></div>
+                            <div class="completionText">Natalie completed this task.</div>
+                            <div class="completionDate">19 May, 2020</div>
+                        </div>
+                        <div class="attachment">
+                            <div class="wrapper">
+                                <div class="fileType">
+                                    <img src="images/document.png" alt="attachment">
+                                </div>
+                                <div class="fileInfo">
+                                    <div class="fileName">Article.docx</div>
+                                    <div class="fileDate">added 17 May, 2020</div>
+                                </div>
+                            </div>
+                            <div class="fileActions">
+                                <div class="icon"><img src="images/delete.png" alt="deleteAttachment"></div>
+                                <div class="icon"><img src="images/cloud.png" alt="downloadAttachment"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="borderContainer">
+                    <input type="text" placeholder="Write a comment...">
+                    <div class="icon commentAttach">
+                        <img src="images/clip.png" alt="attach">
+                    </div>
+                    <div class="icon commentSend">
+                        <img src="images/send.png" alt="send">
+                    </div>
+                </div>
+            </section>
+        </main>
+        <!-- <footer>
+
+        </footer> -->
+    </div>
+</body>
+</html>
