@@ -1,0 +1,86 @@
+body {
+    font-family: sans-serif;
+}
+
+.hero {
+    height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    /* background-image: url(images/hero.jpg); */
+    background-size: cover;
+}
+
+h1 {
+    width: 100%;
+    text-align: center;
+    margin-top: -30px;
+    margin-bottom: 50px;
+    font-size: 3em;
+    /* background-image: 
+    linear-gradient(to right, lime, white);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;  
+    animation: fade 60s linear infinite; */
+}
+
+@keyframes fade {
+    to {
+        background-position: 4500vh;
+    }
+}
+
+button {
+    margin: 30px;
+    padding: 20px;
+    background-color: white;
+    border: 1px solid lightgray;
+    border-radius: 3px;
+    transition: all 0.5s ease-out;
+}
+
+button:hover {
+    background-color: forestgreen;
+    color: white;
+    cursor: pointer;
+}
+
+.pictures {
+    width: calc(100vw - (100vw - 100%));
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+div {
+    width: calc(100% / 3);
+    height: 100%;
+    transition: 2s;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    transition: width 1s ease-in;
+}
+
+
+div:first-child {
+    /* background-color: blue; */
+    background-image: url(images/picture\ \(1\).jpg);
+}
+
+div:nth-child(2) {
+    /* background-color: red; */
+    background-image: url(images/picture\ \(2\).jpg);
+}
+
+div:nth-child(3) {
+    /* background-color: green; */
+    background-image: url(images/picture\ \(3\).jpg);
+}
+
+div:hover {
+    width: 70%;
+}
+

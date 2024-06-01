@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <main>
+        <!-- PANAUDOTI GRIDE GRIDUS -->
+        <form action="">
+            <div>
+                <label for="name">Name</label><br>
+                <input type="text" name="name" id="name">
+            </div>
+            <div>
+                <label for="taxi">Which taxi do you require?</label><br>
+                <input type="radio" name="taxi" id="car"    value="Car">
+                <label for="car">Car</label><br>
+                <input type="radio" name="taxi" id="van"    value="Van">
+                <label for="van">Van</label><br>
+                <input type="radio" name="taxi" id="tukTuk" value="tukTuk">
+                <label for="tukTuk">Tuk Tuk</label>
+            </div>
+            <div>
+                <label for="phone">Phone</label><br>
+                <input type="tel" name="phone" id="phone">
+            </div>
+            <div class="extrasChecklist">
+                <label for="extras">Extras</label><br>
+                <input type="checkbox" name="extras" id="babySeat">
+                <label for="babySeat">Baby Seat</label><br>
+                <input type="checkbox" name="extras" id="wheelchair">
+                <label for="wheelchair">Wheelchair Access</label><br>
+                <input type="checkbox" name="extras" id="stockTip">
+                <label for="stockTip">Stock Tip</label>
+            </div>
+            <div>
+                <label for="email">Email</label><br>
+                <input type="email" name="email" id="email">
+            </div>
+            <div>
+                <label for="pickupDateTime">Pickup Date/Time</label><br>
+                <input type="datetime-local" name="datetime" id="pickupDateTime">
+            </div>
+            <div>
+                <label for="dropoff">Dropoff Place</label><br>
+                <input list="dropoffs" name="dropoff" id="dropoff">
+                <datalist id="dropoffs">
+                    <option value="Hotel">
+                    <option value="Restaurant">
+                    <option value="Apartment">
+                    <option value="Resort">
+                </datalist>
+            </div>
+            <div>
+                <label for="pickupPlace">Pickup Place</label><br>
+                <select name="pickupPlace" id="pickupPlace">
+                    <option value="" disabled selected>Select One</option>
+                    <option value="airport">Airport</option>
+                    <option value="busStation">Bus Station</option>
+                    <option value="dockyard">Dockyard</option>
+                    <option value="home">Home</option>
+                </select>
+            </div>
+            <div class="instructionsContainer">
+                <label for="instructions">Special instructions</label><br>
+                <textarea name="instructions" id="instructions"></textarea>
+            </div>
+            <input type="submit" value="Submit Booking">
+        </form>
+    </main>
+</body>
+</html>

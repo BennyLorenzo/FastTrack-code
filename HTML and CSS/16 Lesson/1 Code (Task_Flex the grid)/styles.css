@@ -1,0 +1,49 @@
+body {
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+}
+
+article, article > div {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+article > div {
+    width: 100%;
+    justify-content: space-evenly;
+}
+
+article > div > div {
+    background-color: lightgray;
+    width: 30%;
+    text-align: center;
+    height: 900px;
+    padding: 20px 0;
+    font-weight: bold;
+    
+}
+
+aside, article, footer {
+    padding: 20px;
+}
+
+/* Colors */
+
+
+aside {
+    background-color: lightseagreen;
+}
+
+article {
+    background-color: lightcoral;
+}
+
+header, footer {
+    text-align: center;
+    background-color: lightblue;
+}

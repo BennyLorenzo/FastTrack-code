@@ -1,0 +1,87 @@
+main {
+    height: 100vh;
+}
+
+article {
+    min-height: 50vh;
+    display: flex;
+}
+
+article div {
+    line-height: 120px;
+}
+
+article > div {
+    width: 100%;
+    margin: 5px;
+}
+
+article > div:first-child {
+ background-color: crimson;
+ 
+}
+
+.gridContainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+}
+
+.gridContainer div {
+    background-color: crimson;
+}
+
+.gridContainer div:first-child {
+    grid-column: 1 / 3;
+}
+
+section {
+    min-height: 48vh;
+    padding: 5px;
+}
+
+
+
+div {
+    color: white;
+    text-align: center;
+}
+
+section:first-child {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    line-height: 120px;
+}
+
+section:first-child div {
+    background-color: crimson;
+}
+
+section:first-child div:first-child {
+    grid-row: span 2;
+    grid-column: span 2;
+}
+
+section:first-child div:nth-child(2) {
+    grid-column: span 2;
+}
+
+section:last-child {
+    background-color: green;
+    display: flex;
+}
+
+section:last-child > div {
+    width: 50%;
+}
+
+.lasties {
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.lasties > div {
+    display: flex;
+    width: 50%;
+}

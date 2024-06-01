@@ -1,0 +1,47 @@
+main {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-gap: 10px;
+    min-height: 100vh;
+    width: 60%;
+    margin: 0 auto;
+}
+
+div {
+    background-color: lightblue;
+    width: 30px;
+    padding: 10px;
+    color: white;
+    text-align: center;
+    font-size: 2em;
+}
+
+div:first-child {
+    place-self: end;
+    height: 250px;
+    background-color: crimson;
+}
+
+div:nth-child(2) {
+    place-self: start center;
+    height: 350px;
+    background-color: forestgreen;
+}
+
+div:nth-child(3) {
+    place-self: start;
+    height: 150px;
+    background-color: midnightblue;
+}
+
+div:nth-child(4) {
+    place-self: center;
+    height: 350px;
+    background-color: gold;
+}
+
+div:nth-child(5) {
+    place-self: end center;
+    height: 50px;
+    background-color: orangered;
+}

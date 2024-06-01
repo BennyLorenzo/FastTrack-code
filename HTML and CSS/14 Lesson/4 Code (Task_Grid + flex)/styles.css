@@ -1,0 +1,25 @@
+main {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 5px;
+    margin: 10px 5px;
+}
+
+section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: gold;
+    height: 30px;
+    padding: 20px;
+}
+
+section:last-child {
+    grid-column: span 2;
+}
+
+div {
+    background-color: crimson;
+    height: 100%;
+    width: 30%;
+}

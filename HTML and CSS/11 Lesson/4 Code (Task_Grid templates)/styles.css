@@ -1,0 +1,27 @@
+div {
+    display: grid;
+    /* grid-template-columns: 33% 33% 33% */
+    /* grid-template-columns: repeat(3, 33%); */
+    /* grid-template-columns: 1fr 1fr 1fr; */
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+}
+
+/* ul {
+    list-style-type: none;
+    padding: 0;
+} */
+
+p {
+    margin: 0;
+    padding: 10px;
+}
+
+p:nth-child(odd) {
+    background-color: lightcoral;
+}
+
+p:nth-child(even) {
+    background-color: lightblue;
+}
+

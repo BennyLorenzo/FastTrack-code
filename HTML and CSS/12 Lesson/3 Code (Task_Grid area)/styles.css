@@ -1,0 +1,35 @@
+main {
+    display: grid;
+    grid-template-columns: repeat(9, 1fr);
+    grid-template-areas: 
+    "header header header header header header header header header"
+    "sidebar sidebar sidebar content content content content content content"
+    ". . . footer footer footer footer footer footer";
+    margin: 5px;
+    grid-gap: 5px;
+}
+
+div {
+    height: 180px;
+    line-height: 180px;
+    text-align: center;
+    font-size: 1.5em;
+    background-color: salmon;
+    border-radius: 5px;
+}
+
+div:first-child {
+    grid-area: header;
+}
+
+div:nth-child(2) {
+    grid-area: sidebar;
+}
+
+div:nth-child(3) {
+    grid-area: content;
+}
+
+div:last-child {
+    grid-area: footer;
+}

@@ -1,0 +1,36 @@
+main {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-areas: 
+    "header header header header"
+    "main main . sidebar"
+    "footer footer footer footer";
+}
+
+div {
+    height: 200px;
+    line-height: 200px;
+    text-align: center;
+    font-size: 1.5em;
+    color: white;
+}
+
+div:nth-child(1) {
+    grid-area: header;
+    background-color: lightblue;
+}
+
+div:nth-child(2) {
+    grid-area: main;
+    background-color: lightcoral;
+}
+
+div:nth-child(3) {
+    grid-area: sidebar;
+    background-color: lightgreen;
+}
+
+div:nth-child(4) {
+    grid-area: footer;
+    background-color: lightpink;
+}

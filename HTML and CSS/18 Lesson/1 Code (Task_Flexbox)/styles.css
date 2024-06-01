@@ -1,0 +1,52 @@
+main, .leftSide, .rightSide, article, .articleFooter {
+    display: flex;
+}
+
+main {
+    height: 100vh;
+}
+
+.leftSide {
+    flex: 1;
+}
+
+.leftSide > div {
+    background-color: lightblue;
+}
+
+.rightSide {
+    flex-direction: column;
+    flex: 4;
+}
+
+.articleFooter {
+    flex-direction: column;
+    padding: 0;
+    flex: 4;
+}
+
+.articleFooter div:first-child {
+    flex: 3;
+}
+
+.articleFooter div:last-child {
+    background-color: lightgreen;
+}
+
+div {
+    flex: 1;
+    padding: 10px;
+}
+
+.header {
+    flex: 1;
+    background-color: lightgreen;
+}
+
+article {
+    flex: 4;
+}
+
+div:last-child {
+    background-color: lightgray;
+}

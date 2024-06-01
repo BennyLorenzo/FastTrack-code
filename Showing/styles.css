@@ -1,0 +1,13 @@
+section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+ul {
+    display: flex;
+}
+
+li {
+    margin: 20px;
+}

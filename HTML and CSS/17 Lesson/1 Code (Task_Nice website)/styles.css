@@ -1,0 +1,101 @@
+body {
+    font-family: sans-serif;
+}
+
+h2 {
+    
+}
+
+header {
+    display: flex;
+    margin: 0 30px;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin: 0 20px;
+}
+
+ul {
+    list-style-type: none;
+    display: flex;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    color: rgb(82, 82, 82);
+    font-size: 0.9em;
+    border-radius: 3px;
+    margin: 10px;
+}
+
+a:hover {
+    background-color: lightgray;
+}
+
+li {
+    margin: 10px;
+    font-size: 0.9em;
+}
+
+.loginRegister ul a:last-child {
+    border: solid 1px rgb(156, 156, 156);
+}
+
+main {
+    height: calc(100vh - 100px);
+    display: grid;
+}
+
+.hero {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 700px;
+    margin: 0 auto;
+    align-items: center;
+    justify-items: center;
+}
+
+h1 {
+    font-size: 50px;
+    width: 85%;
+}
+
+.clients {
+    display: flex;
+}
+
+.clients img {
+    width: 25%;
+    margin: 20px 0;
+}
+
+.heroImage img {
+    height: 400px;
+}
+
+p {
+    color: rgb(72, 72, 72);
+    font-size: 0.9em;
+    width: 90%;
+    margin: 25px 0;
+}
+
+button {
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 7px 20px;
+    font-size: 0.8em;
+    font-weight: bold;
+}
+
+button:hover {
+    cursor: pointer;
+    background-color: rgb(72, 72, 72);
+}

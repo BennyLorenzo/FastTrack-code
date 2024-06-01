@@ -1,0 +1,52 @@
+body {
+    font-family: sans-serif;
+    background-color: rgb(49, 49, 49);
+    color: white;
+    font-size: 0.8em;
+}
+
+.logo {
+    display: flex;
+}
+
+img {
+    height: 15px;
+}
+
+footer {
+    margin: 0 auto;
+    width: 80%;
+    display: grid;
+    grid-template-columns: 3fr 2fr 2fr 3fr;
+    grid-template-rows: 9fr 1fr
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.symbols {
+    display: flex;
+    flex-direction: column;
+}
+
+.wrapper {
+    display: grid;
+    grid-template-columns: 1fr 9fr;
+}
+
+li {
+    margin: 10px 0;
+}
+
+.containerPowered {
+    grid-column: 4;
+    justify-self: end;
+}

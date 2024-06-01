@@ -1,0 +1,60 @@
+body {
+    background-color: green;
+}
+
+p {
+    color: white;
+    font-size: 10px;
+}
+
+div {
+    color: red;
+    font-family: monospace;
+    font-size: 10px;
+}
+
+img {
+    width: 100px;
+}
+
+@media screen and (min-width: 768px) {
+    body {
+        background-color: blue;
+    }
+    
+    p {
+        color: yellow;
+        font-size: 30px;
+    }
+    
+    div {
+        color: red;
+        font-family: cursive;
+        font-size: 20px;
+    }
+    
+    img {
+        width: 300px;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    body {
+        background-color: red;
+    }
+    
+    p {
+        color: blue;
+        font-size: 50px;
+    }
+    
+    div {
+        color: white;
+        font-family: fantasy;
+        font-size: 20px;
+    }
+    
+    img {
+        width: 500px;
+    }
+}

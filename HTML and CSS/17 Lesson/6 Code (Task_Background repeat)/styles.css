@@ -1,0 +1,48 @@
+body {
+    font-family: sans-serif;
+}
+
+main {
+    display: grid;
+    grid-template-rows: auto auto 1fr;
+    align-items: center;
+    justify-items: center;
+    height: calc(100vh - 20px);
+    width: calc(100vw - 20px);
+    margin: 10px;
+}
+
+p {
+    font-size: 0.9em;
+    text-align: center;
+}
+
+section {
+    display: grid;
+    grid-template-rows: 1fr;
+    height: 100%;
+    width: 100%;
+}
+
+div {
+    background-image: url(images/photo.jpg);
+    background-size: cover;
+}
+
+@media screen and (min-width: 500px) {
+    section {
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: 1fr 1fr;
+        gap: 10px;
+    }
+
+    p {
+        width: 500px;
+    }
+}
+
+@media screen and (min-width: 950px) {
+    section {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}

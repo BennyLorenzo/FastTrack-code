@@ -1,0 +1,56 @@
+body {
+    font-family: sans-serif;
+    font-size: 0.8em;
+}
+
+main {
+    display: grid;
+    place-items: center;
+    height: 100vh;
+}
+
+form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    place-items: start;
+    background-color: lightgray;
+    border-radius: 5px;
+    gap: 10px;
+    padding: 20px;
+    width: 500px;
+}
+
+div {
+    width: 100%;
+}
+
+label {
+    font-weight: bold;
+}
+
+input, select, textarea {
+    margin: 5px 0;
+}
+
+form .instructionsContainer {
+    grid-column: span 2;
+}
+
+input[type=submit] {
+    grid-column: span 2;
+    place-self: center;
+    background-color: gray;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+input[type=submit]:hover {
+    cursor: pointer;
+    background-color: darkgray;
+}
+
+select {
+    width: 100%;
+}

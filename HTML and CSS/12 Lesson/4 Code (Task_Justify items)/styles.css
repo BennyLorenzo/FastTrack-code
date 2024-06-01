@@ -1,0 +1,61 @@
+body {
+    font-family: sans-serif;
+}
+
+section {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    width: 300px;
+    margin: 20px;
+    background-color: gray;
+    border-radius: 5px;
+    padding: 10px;
+    grid-gap: 10px;
+}
+
+div {
+    background-color: black;
+    color: white;
+    padding: 5px;
+    border-radius: 5px;
+    text-align: center;
+    letter-spacing: 1px
+}
+
+section:first-child {
+    background-color: crimson;
+}
+
+section:first-child:hover, section:first-child:focus {
+    justify-items: center;
+}
+
+section:nth-child(2) {
+    background-color: midnightblue;
+}
+
+section:nth-child(2):hover, section:nth-child(2):focus {
+    justify-items: start;
+}
+
+section:nth-child(3) {
+    background-color: forestgreen;
+}
+
+section:nth-child(3):hover, section:nth-child(3):focus {
+    justify-items: end;
+}
+
+section:nth-child(4) {
+    background-color: gold;
+    justify-items: start;
+}
+
+section:nth-child(4):hover, section:nth-child(4):focus {
+    justify-items: stretch;
+}
+
+section:last-child {
+    background-color: black;
+    font-size: 2em;
+}

@@ -1,0 +1,22 @@
+div {
+    height: 100vh;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+div:first-child {
+    background-image: url(images/picture\ \(1\).jpg);
+}
+
+div:nth-child(2) {
+    background-image: url(images/picture\ \(2\).jpg);
+}
+
+div:nth-child(3) {
+    background-image: url(images/picture\ \(3\).jpg);
+}
+
+div:last-child {
+    background-image: url(images/picture\ \(4\).jpg);
+}
+

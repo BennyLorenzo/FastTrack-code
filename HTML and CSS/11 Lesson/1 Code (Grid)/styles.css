@@ -1,0 +1,14 @@
+div {
+    width: 400px;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    background-color: lightgray;
+}
+
+p:nth-child(odd) {
+    background-color: lightcoral;
+}
+
+p:nth-child(even) {
+    background-color: lightskyblue;
+}
