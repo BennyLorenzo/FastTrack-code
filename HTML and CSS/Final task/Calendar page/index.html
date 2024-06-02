@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="content">
+        <header>
+            <div class="logo"><a href="#">Task manager</a></div>
+                <div class="navbar">
+                    <search>
+                        <form action="">
+                            <img src="../images/search.png" alt="search">
+                            <input type="search" id="search" name="search" placeholder="Search...">
+                        </form>
+                    </search>
+                    <div class="navButtons">
+                        <button>Inbox</button>
+                        <button class="active">Calendar</button>
+                    </div>
+                    <div class="icon edit"><img src="../images/edit.png" alt="edit"></div>
+                </div>
+        </header>
+        <main>
+            <section class="user">
+                <div class="borderContainer profile">
+                    <div class="profile">
+                        <div class="picture mainPicture"></div>
+                        <div class="name">Natalie Smith</div>
+                        <div class="email">natalie.smith@gmail.com</div>
+                    </div>
+                    <div class="userButtons">
+                        <div class="icon">
+                            <img src="../images/settings.png" alt="settings">
+                        </div>
+                        <div class="icon">
+                            <span class="notifications">2</span>
+                            <img id="email" src="../images/email.png" alt="email">
+                        </div class="icon">
+                        <div class="icon">
+                            <span class="notifications">6</span>
+                            <img src="../images/bell.png" alt="notifications">
+                        </div>
+                    </div>
+                    <div class="progressBar">
+                        <div class="progress">12/34</div>
+                        <div class="bar">
+                            <div class="fill"></div>
+                        </div>
+                    </div>
+                    <div class="progressCounters">
+                        <div>
+                            <div class="counter">12</div>
+                            <div class="taskType"><span>Completed</span> tasks</div>
+                        </div>
+                        <div>
+                            <div class="counter">22</div>
+                            <div class="taskType"><span>To do</span> tasks</div>
+                        </div>
+                        <div>
+                            <div class="counter">243</div>
+                            <div class="taskType"><span>All</span> completed</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="borderContainer">
+                    <h4>Projects</h4>
+                    <ul>
+                        <li><div></div>Marketing</li>
+                        <li><div></div>Design</li>
+                        <li><div></div>Development</li>
+                        <li><div></div>Management</li>
+                    </ul>
+                </div>
+                <div class="borderContainer team">
+                    <h4>Team</h4>
+                    <div class="teamMembers">
+                        <div class="picture"></div>
+                        <div class="picture"></div>
+                        <div class="picture"></div>
+                        <div class="picture"></div>
+                        <div class="picture"></div>
+                    </div>   
+                </div>
+            </section>
+            <section class="calendar">
+                <div class="calendarHeading">
+                    <div class="weekMonth">
+                        <button class="active">Week</button>
+                        <button>Month</button>
+                    </div>
+                    <div class="monthYear">
+                        <div>October</div>
+                        <div>2020</div>
+                    </div>
+                    <div class="calendarControls">
+                        <button>Weekends</button>
+                        <button class="active">Add task</button>
+                    </div>
+                </div>
+                <div class="wrapper">
+                    <table>
+                        <thead>
+                            <th>Monday</th>
+                            <th>Tuesday</th>
+                            <th>Wednesday</th>
+                            <th>Thursday</th>
+                            <th>Friday</th>
+                            <th>Saturday</th>
+                            <th>Sunday</th>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="inactive">31</td>
+                                <td class="withTasks projectMarketing">1
+                                    <ul>
+                                        <li>Sales report from last month</li>
+                                        <li>Prepare offers for clients</li>
+                                    </ul>
+                                </td>
+                                <td>2</td>
+                                <td class="withTasks projectDesign">3
+                                    <ul>
+                                        <li>Create 3 illustrations for blog post about design trends</li>
+                                    </ul>
+                                </td>
+                                <td>4</td>
+                                <td>5</td>
+                                <td>6</td>
+                            </tr>
+                            <tr>
+                                <td class="withTasks projectDevelopment">7
+                                    <ul>
+                                        <li>Take part in course about future design trends and new technologies</li>
+                                    </ul>
+                                </td>
+                                <td>8</td>
+                                <td>9</td>
+                                <td>10</td>
+                                <td>11</td>
+                                <td>12</td>
+                                <td>13</td>
+                            </tr>
+                            <tr>
+                                <td>14</td>
+                                <td class="withTasks projectMarketing">15
+                                    <ul>
+                                        <li>Write an article about design trends</li>
+                                    </ul>
+                                </td>
+                                <td>16</td>
+                                <td class="withTasks projectMarketing">17
+                                    <ul>
+                                        <li>Create AdWords campaign</li>
+                                        <li>Send newsletter to clients</li>
+                                    </ul>
+                                </td>
+                                <td>18</td>
+                                <td>19</td>
+                                <td>20</td>
+                            </tr>
+                            <tr>
+                                <td>21</td>
+                                <td>22</td>
+                                <td class="withTasks projectManagement">23
+                                    <ul>
+                                        <li>Redesign project UI interface for clients and get feedback</li>
+                                    </ul>
+                                </td>
+                                <td>24</td>
+                                <td>25</td>
+                                <td>26</td>
+                                <td>27</td>
+                            </tr>
+                            <tr>
+                                <td>28</td>
+                                <td>29</td>
+                                <td>30</td>
+                                <td class="inactive">1</td>
+                                <td class="inactive">2</td>
+                                <td class="inactive">3</td>
+                                <td class="inactive">4</td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                </div>
+            </section>
+        </main>
+        <!-- <footer>
+
+        </footer> -->
+    </div>
+</body>
+</html>

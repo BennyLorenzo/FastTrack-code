@@ -173,7 +173,7 @@ main {
 }
 
 .picture {
-    background-image: url(images/kot.jpg);
+    background-image: url(../images/kot.jpg);
     background-position: center center;
     background-size: cover;
     border-radius: 50%;
