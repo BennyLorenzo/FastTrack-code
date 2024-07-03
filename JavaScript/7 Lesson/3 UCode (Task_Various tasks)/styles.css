@@ -1,0 +1,37 @@
+main {
+    padding: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 100px;
+    justify-content: center;
+}
+
+section {
+    padding: 20px;
+    background-color: lightgray;
+    border-radius: 5px;
+}
+
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+input[type]:not([type=checkbox]) {
+    width: 50%;
+}
+
+input[type='submit'] {
+    align-self: center;
+}
+
+ul {
+    margin: 0;
+}
+
+#triangle p {
+    margin: 0;
+    height: 10px;
+}

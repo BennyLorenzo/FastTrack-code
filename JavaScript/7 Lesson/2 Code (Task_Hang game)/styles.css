@@ -1,0 +1,45 @@
+main {
+    padding: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+section {
+    padding: 20px;
+    background-color: lightgray;
+    border-radius: 5px;
+}
+
+.playArea {
+    display: flex;
+    line-height: 300px;
+    font-size: 2.5em;
+    letter-spacing: 10px;
+    gap: 20px;
+}
+
+.playArea #hanger {
+    background-image: url(images/hang0.png);
+    background-size: cover;
+    background-position: center;
+    width: 300px;
+}
+
+#hiddenWord {
+    text-align: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+input[type='submit'] {
+    align-self: center;
+}
+
+input[type='text'] {
+    text-transform: uppercase;
+}

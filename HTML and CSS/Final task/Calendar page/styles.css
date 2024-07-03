@@ -1,0 +1,549 @@
+body {
+    font-family: sans-serif;
+    font-size: 0.9em;
+    background-color: whitesmoke;
+    --main-txt-color: lightslategray;
+    --main-bg-color: mediumslateblue;
+    --light-bg-color: rgb(152, 136, 239);
+}
+
+.content {
+    width: 80vw;
+    margin: 0 auto;
+    background-color: white;
+    /* border: 1px solid lightgray; */
+}
+
+/* Navbar */
+
+header {
+    height: 60px;
+    border: 1px solid lightgray;
+}
+
+header, .navbar {
+    display: flex;
+    align-items: center;
+}
+
+a {
+    color: var(--main-txt-color);
+    text-decoration: none;
+}
+
+.logo {
+    width: 25%;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    border-right: 1px solid lightgray;
+    line-height: 60px;
+}
+
+.navbar {
+    flex: 1;
+    justify-content: space-between;
+    padding: 0 20px;
+}
+
+img {
+    height: 15px;
+}
+
+form {
+    display: flex;
+    align-items: center;
+}
+
+form img {
+    filter: drop-shadow(0px 1000px 0 var(--main-txt-color));
+    transform: translateY(-1000px);
+}
+
+input[type=search] {
+    border: none;
+    margin: 0 10px;
+}
+
+input[type=search]:focus-visible {
+    border: none;
+    outline: none;
+}
+
+input[type=search]::placeholder, input[type=text]::placeholder {
+    color: var(--main-txt-color);
+}
+
+.navButtons {
+    padding: 2px;
+    background-color: whitesmoke;
+    border-radius: 25px;
+}
+
+button {
+    border: none;
+    border-radius: 25px;
+    padding: 5px 30px;
+    background-color: whitesmoke;
+    color: var(--main-txt-color);
+}
+
+button:hover {
+    cursor: pointer;
+    background-color: var(--main-bg-color);
+    color: white;
+    transition: 0.2s ease-in;
+}
+
+.active {
+    background-color: var(--main-bg-color);
+    color: white;
+}
+
+button:active {
+    background-color: var(--light-bg-color);
+    color: white;
+}
+
+.icon {
+    display: flex;
+    height: 20px;
+    width: 20px;
+    padding: 5px;
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+    transition: 0.2s;
+}
+
+.edit {
+    background-color: var(--main-bg-color);
+}
+
+.icon img {
+    filter: drop-shadow(0px 1000px 0 white);
+    transform: translateY(-1000px);
+}
+
+.icon:hover {
+    cursor: pointer;
+    background-color: var(--light-bg-color);
+    transition: 0.2s ease-in;
+}
+
+/* Main */
+
+main {
+    display: flex;
+    height: calc(100vh - 62.6px);
+    border: 1px solid lightgray;
+    border-top: none;
+}
+
+.calendar {
+    flex: 3;
+}
+
+/* User section */
+
+.borderContainer {
+    display: flex;
+    flex-direction: column;
+    border-bottom: 1px solid lightgray;
+}
+
+.profile {
+    align-items: center;
+}
+
+/* Profile */
+
+.user {
+    width: 25%;
+    border-right: 1px solid lightgray;
+}
+
+.user, .profile {
+    display: flex;
+    flex-direction: column;
+}
+
+.picture {
+    background-image: url(../images/kot.jpg);
+    background-position: center center;
+    background-size: cover;
+    border-radius: 50%;
+    margin: 10px 0;
+    padding: 10px;
+    width: 10px;
+    height: 10px;
+}
+
+.mainPicture {
+    width: 50px;
+    height: 50px;
+}
+
+.name {
+    font-weight: bold;
+    padding: 5px;
+}
+
+.email {
+    font-size: 0.7em;
+    font-weight: bold;
+    padding: none;
+    padding: 5px;
+    color: var(--main-txt-color);
+}
+
+/* User buttons */
+
+.userButtons {
+    display: flex;
+    justify-content: space-evenly;
+    width: 60%;
+    padding: 10px 0;
+}
+
+.userButtons div {
+    background-color: whitesmoke;
+}
+
+.userButtons div:hover {
+    background-color: var(--main-bg-color);
+}
+
+.userButtons div:hover img {
+    filter: drop-shadow(0px 1000px 0 white);
+}
+
+.notifications {
+    position: relative;
+    bottom: 60%; left: 60%;
+    height: 12px;
+    width: 12px;
+    border-radius: 50%;
+    background-color: firebrick;
+    display: block;
+    color: white;
+    font-size: 0.6em;
+    font-weight: bold;
+    text-align: center;
+    line-height: 12px;
+    padding: 1px;
+}
+
+.userButtons div img {
+    filter: drop-shadow(0px 1000px 0 var(--main-bg-color));
+    transform: translateY(-1000px);
+    position: absolute;
+}
+
+/* Progress bar */
+
+.progressBar {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+}
+
+.progress {
+    font-size: 0.7em;
+    font-weight: bold;
+    color: var(--main-txt-color);
+}
+
+.bar {
+    background-color: whitesmoke;
+    height: 10px;
+    width: 100%;
+    margin: 5px 0;
+    border-radius: 5px;
+}
+
+.fill {
+    background-color: var(--main-bg-color);
+    height: 10px;
+    width: calc(12 / 34 * 100%);
+    border-radius: 5px;
+}
+
+/* Progress counters */
+
+.progressCounters {
+    display: flex;
+    padding: 10px;
+    text-align: center;
+    justify-content: space-between;
+    width: 75%;
+}
+
+.progressCounters > div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 20%;
+}
+
+.counter {
+    margin-bottom: 5px;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+.progressCounters span {
+    font-weight: bold;
+}
+
+.taskType {
+    font-size: 0.8em;
+    color: var(--main-txt-color);
+    line-height: 18px;
+}
+
+/* Project types */
+
+h4 {
+    margin: 0;
+    padding: 20px;
+    padding-bottom: 10px;
+    text-transform: uppercase;
+}
+
+.user ul {
+    padding: 0 20px;
+    margin: 0;
+}
+
+.user ul li div {
+    height: 7px;
+    width: 7px;
+    border: solid 3px black;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.user ul li:first-child div{
+    border-color: mediumpurple;
+}
+
+.user ul li:nth-child(2) div{
+    border-color: var(--main-bg-color);
+}
+
+.user ul li:nth-child(3) div{
+    border-color: gold;
+}
+
+.user ul li:last-child div{
+    border-color: coral;
+}
+
+.user ul li:first-child div:hover{
+    background-color: mediumpurple;
+    transition: 0.2s;
+    cursor: pointer;
+}
+
+.user ul li:nth-child(2) div:hover{
+    background-color: var(--main-bg-color);
+    transition: 0.2s;
+    cursor: pointer;
+}
+
+.user ul li:nth-child(3) div:hover{
+    background-color: gold;
+    transition: 0.2s;
+    cursor: pointer;
+}
+
+.user ul li:last-child div:hover{
+    background-color: coral;
+    transition: 0.2s;
+    cursor: pointer;
+}
+
+.user ul li {
+    display: flex;
+    align-items: center;
+    font-size: 0.9em;
+    font-weight: bold;
+    color: var(--main-txt-color);
+    margin: 10px 0;
+}
+
+/* Team */
+
+.team {
+    border: none;
+}
+
+.teamMembers {
+    display: flex;
+    padding: 20px;
+    justify-content: space-between;
+    padding-top: 0;
+    border: none;
+}
+
+.teamMembers div {
+    cursor: pointer;
+}
+
+/* Calendar */
+
+.calendar {
+    padding: 30px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: whitesmoke;
+}
+
+.calendarHeading {
+    width: 700px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.weekMonth {
+    display: flex;
+}
+
+.weekMonth button {
+    border: 2px solid var(--main-bg-color);
+    padding: 5px 20px;
+}
+
+.weekMonth button:first-child {
+    border-radius: 0;
+    border-top-left-radius: 25px;
+    border-bottom-left-radius: 25px;
+}
+
+.weekMonth button:last-child {
+    border-radius: 0;
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
+    color: var(--main-bg-color);
+}
+
+.weekMonth button:hover{
+    color: white;
+}
+
+.calendarControls button {
+    padding: 5px 20px;
+}
+
+.calendarControls button:first-child {
+    border: 2px solid var(--main-txt-color);
+}
+
+.monthYear {
+    font-size: 0.9em;
+    text-align: center;
+    font-weight: bold;
+}
+
+.monthYear div:first-child {
+    margin-bottom: 3px;
+}
+
+.monthYear div:last-child {
+    font-size: 0.9em;
+    color: var(--main-txt-color);
+}
+
+/* Calendar table */
+
+.calendar .wrapper {
+    overflow-x: auto;
+    width: 700px;
+    margin: 30px 0;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    table-layout: fixed;
+    background-color: white;
+}
+
+th {
+    padding: 10px 20px;
+    width: 99px;
+    font-size: 0.8em;
+    color: var(--main-txt-color);
+}
+
+td {
+    padding: 5px;
+    height: 70px;
+    font-size: 0.7em;
+    font-weight: bold;
+    border-spacing: 0px;
+}
+
+th, td {
+    border: 1px solid var(--main-txt-color);
+    vertical-align: top;
+}
+
+.inactive {
+    color: var(--main-txt-color);
+}
+
+td ul {
+    padding: 0;
+    margin: 0;
+    padding-left: 20px;
+    list-style-type: "•";
+}
+
+
+td ul li {
+    font-size: 0.8em;
+    margin-bottom: 4px;
+    font-weight: bold;
+    padding-left: 3px;
+    line-height: 1.5em;
+}
+
+li::marker {
+    font-size: 1.6em;
+}
+
+.withTasks {
+    border-left: 3px solid black;
+}
+
+.projectMarketing {
+    background-color: rgb(244, 241, 253);
+    color: rgb(129, 96, 195);
+    border-left-color: rgb(129, 96, 195);
+}
+
+.projectDesign {
+    background-color: rgb(225, 221, 248);
+    color: rgb(95, 77, 198);
+    border-left-color: rgb(95, 77, 198);
+}
+
+.projectDevelopment {
+    background-color: rgb(255, 253, 237);
+    color: rgb(189, 161, 0);
+    border-left-color: rgb(189, 161, 0);
+}
+
+.projectManagement {
+    background-color: rgb(255, 222, 210);
+    color: rgb(214, 100, 58);
+    border-left-color: rgb(214, 100, 58);
+}
+
+
+
+

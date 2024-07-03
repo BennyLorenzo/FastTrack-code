@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body style="background-color: gray;">
+    <main>
+        <!-- 1 -->
+        <section>
+            <h3>Task 1</h3>
+            <h2>Kalėdinis bonusas</h2>
+            <form id="firstTaskForm" action="">
+                <label for="tenure">Įveskite išdirbtus metus įmonėje:</label>
+                <input type="number" name="tenure" id="tenure">
+
+                <input type="submit" value="Skaičiuoti">
+                <p>Jums priklausantis bonusas: <span></span></p>
+            </form>
+        </section>
+        <!-- 2 -->
+        <section>
+            <h3>Task 2</h3>
+            <h2>Keliamieji metai</h2>
+            <form id="secondTaskForm" action="">
+                <label for="leapYear">Įveskite norimus metus:</label>
+                <input type="number" name="leapYear" id="leapYear">
+
+                <input type="submit" value="Skaičiuoti">
+                <p>Ar metai keliamieji: <span></span></p>
+            </form>
+        </section>
+        <!-- 3 -->
+        <section>
+            <h3>Task 3</h3>
+            <h2>Celsijus į Farenheitą</h2>
+            <form id="thirdTaskForm" action="">
+                <label for="temperature">Įveskite temperatūrą Celsijais:</label>
+                <input type="number" name="temperature" id="temperature">
+
+                <input type="submit" value="Skaičiuoti">
+                <p>Temperatūra Farenheitais: <span></span> °F</p>
+            </form>
+        </section>
+        <!-- 4 -->
+        <section>
+            <h3>Task 4</h3>
+            <h2>El. pašto registracija</h2>
+            <form id="fourthTaskForm" action="">
+                <label for="email">Įveskite el. paštą:</label>
+                <input type="email" name="email" id="email">
+                <div>
+                    <input type="checkbox" name="agree" id="agree">
+                    <label for="agree" style="display: inline;">Sutinku gauti el. laiškus</label>
+                </div>
+                <input type="submit" value="Registruotis">
+                <p>Registracija: <span></span></p>
+            </form>
+        </section>
+        <!-- 5 -->
+        <section>
+            <h3>Task 5</h3>
+            <h2>Teksto sąrašas</h2>
+            <form id="fifthTaskForm" action="">
+                <label for="freeText">Įveskite norimą tekstą:</label>
+                <input type="text" name="freeText" id="freeText">
+                <label for="listItemAmount">Kiek kartų pasikartos tekstas:</label>
+                <input type="number" name="listItemAmount" id="listItemAmount">
+                <input type="submit" value="Sukurti sąrašą">
+                <h3>Sąrašas:</h3>
+                <ul>
+
+                </ul>
+            </form>
+        </section>
+        <!-- 6 -->
+        <section>
+            <h3>Task 6</h3>
+            <h2>Trikampis</h2>
+            <form id="sixthTaskForm" action="">
+                <label for="triangleSize">Įveskite trikampio dydį</label>
+                <input type="number" name="triangleSize" id="triangleSize">
+                <input type="submit" value="Kurti trikampį">
+                <h3>Trikampis:</h3>
+                <div id="triangle">
+                </div>
+            </form>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
